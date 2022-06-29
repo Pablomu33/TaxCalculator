@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Skat calculator Income A</title>
+	<meta charset="utf-8">
+	<meta name="Keyword" content="">
+	<meta name="Author" content="Pablo Musella">
+	<meta name="Description" content="Skat calculator">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+
+<header>
+  <div class="flags">
+    <ul>
+      <a href="#spanish" target="_blank"> <img src="recursos/spain.png" id="spanish-flag"></a>
+      <a href="#english" target="_blank"> <img src= "recursos/united-kingdom.png"></a>
+     </ul>
+  </div>
+</header>
+
+<div id="english" class="english">
+<body>
+
+
+    <h1>Denmark Tax Calculator</h1>
+
+    <div class="contenedor-formulario">
+        
+
+            <p>
+                <label for="ingresoBruto" class="colocar_bruto">Anual Tax Declaration   
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="number" name="introducir_anual" id="anual" required="obligatorio" placeholder="Write you anual income">
+            </p>
+            <p>
+                <label for="ingresoBruto" class="colocar_bruto">Monthly Income Before Taxes
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="number" name="introducir_bruto" id="bruto" required="obligatorio" placeholder="write you Monthly income">
+            </p>
+            <p>
+                <label for="fradag" class="colocar_fradag">Tax Free
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="number" name="introducir_fradag" id="fradag" required="obligatorio" placeholder="write you tax free amount">
+            </p>
+            <p>
+                <label for="descuento" class="colocar_descuento">Discount Rate
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="number" name="introducir_descuento" id="descuento" required="obligatorio" placeholder="Discount rate (you find it in Skat)">
+            </p>
+
+            <button type="submit" name="enviar_formulario" id="Calcular" class="calcular" onclick="obtenerElementos()"><p>Calculate</p></button>
+
+            
+       
+    </div>
+
+    <div>
+        <p id="resultado" ></p> 
+    </div>
+
+</div>
+
+  <div id="spanish" class="spanish">
+
+    <h1>Calculadora de impuestos Dinamarca</h1>
+
+    <div class="contenedor-formulario">
+        
+
+            <p>
+                <label for="ingresoBruto" class="colocar_bruto">Declaración anual   
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="number" name="introducir_anual" id="anual" required="obligatorio" placeholder="Escribe tu declaración anual">
+            </p>
+            <p>
+                <label for="ingresoBruto" class="colocar_bruto">Ingreso Mensual Bruto
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="number" name="introducir_bruto" id="bruto" required="obligatorio" placeholder="Escribe tu ingreso mensual bruto">
+            </p>
+            <p>
+                <label for="fradag" class="colocar_fradag">Libre de Impuestos
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="number" name="introducir_fradag" id="fradag" required="obligatorio" placeholder="Escribe tu fradag">
+            </p>
+            <p>
+                <label for="descuento" class="colocar_descuento">Porcentaje de Descuento
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="number" name="introducir_descuento" id="descuento" required="obligatorio" placeholder="% de descuento (se obtiene de SKAT)">
+            </p>
+
+            <button type="submit" name="enviar_formulario" id="Calcular" class="calcular" onclick="obtenerElementos()"><p>Calcular</p></button>
+
+            
+       
+    </div>
+
+    <div>
+        <p id="resultado" ></p> 
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        
+        <ul class="Redes">
+            <a href="https://instagram.com/p.m_fotografia" target="_blank"> <img src="Recursos/Instagram.png"></a>
+            <a href="https://cafecito.app/pmfotografia" target="_blank"> <img src="Recursos/cafecito.png"></a>
+                    
+        </ul>
+        
+        <div class="Copyrigth"><p>Copyrigth - Pablo Musella - Todos los derecho reservados</p></div>
+        
+</footer>
+
+
+    <script src="JS/script.js" type="text/Javascript"></script>
+
+
+</body> 
